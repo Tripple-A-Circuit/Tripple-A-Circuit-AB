@@ -152,8 +152,8 @@
   </header>
 
   <section id="what-we-offer" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title">What We Offer</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+    <h2 class="section-title" style="text-align: center;">What We Offer</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;"><i class="fas fa-microchip"></i><p>Firmware development in C/C++</p></div>
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;"><i class="fas fa-plug"></i><p>Driver/protocols: I2C, SPI, UART, CAN</p></div>
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;"><i class="fas fa-clock"></i><p>Real-time FreeRTOS & bare-metal programming</p></div>
@@ -163,8 +163,8 @@
   </section>
 
   <section id="solutions" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title">Some of Our Solutions</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+    <h2 class="section-title" style="text-align: center;">Some of Our Solutions</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
         <i class="fas fa-car"></i>
         <p>Automotive Solutions</p>
@@ -193,9 +193,9 @@
     </div>
   </section>
 
-  <section id="process" class="container" style="background-color: #f4f8fb; padding: 80px 20px; transition: background 0.3s ease; animation: fadeIn 1s ease-in-out;">
-    <h2 class="section-title">Our Process</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+  <section id="process" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">Our Process</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
         <i class="fas fa-lightbulb"></i><p>1. Discovery & Requirements</p></div>
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
@@ -205,14 +205,14 @@
     </div>
   </section>
 
-  <section id="testimonials" class="container" style="background-color: #f4f8fb; padding: 80px 20px; animation: fadeIn 1s ease-in-out;">
-    <h2 class="section-title">What Our Clients Say</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+  <section id="testimonials" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">What Our Clients Say</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
         <p>"Tripple-A-Circuit helped us launch our product on time. Their embedded software was fast, reliable, and well-documented."</p>
         <strong>- Jonas Eriksson, Product Manager</strong>
       </div>
-      <div class="card">
+      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
         <p>"We had the hardware but no firmware expertise. Their team jumped in and delivered a rock-solid solution."</p>
         <strong>- Sara Mahmoud, IoT Startup CEO</strong>
       </div>
@@ -220,13 +220,15 @@
   </section>
 
   <section class="about" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title">About Us</h2>
-    <p>Tripple-A-Circuit is a Sweden-based embedded software partner. We help startups and product developers build smart, reliable systems by delivering efficient, scalable firmware solutions.</p>
+    <h2 class="section-title" style="text-align: center;">About Us</h2>
+    <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+      <p>Tripple-A-Circuit is a Sweden-based embedded software partner specializing in designing and delivering high-performance firmware solutions. We help startups and product developers turn their ideas into reality by building scalable, reliable, and efficient systems. With deep expertise in embedded C/C++, real-time operating systems, and driver development for protocols like I2C, SPI, UART, and CAN, our team transforms complex hardware into smart, connected technology. Whether you're in automotive, security, industrial automation, or smart devices—we deliver code that powers innovation.</p>
+    </div>
   </section>
 
   <section id="contact" class="contact" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title">Contact Us</h2>
-    <form class="contact-form">
+    <h2 class="section-title" style="text-align: center;">Contact Us</h2>
+    <form class="contact-form" style="display: flex; flex-direction: column; gap: 20px; max-width: 500px; margin: 0 auto;">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea rows="5" placeholder="Your Message" required></textarea>
