@@ -269,7 +269,19 @@
 
   <section id="process" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
     <h2 class="section-title" style="text-align: center;">Our Process</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+    <div class="cards" style="display: grid; gap: 30px;">
+  <style>
+    @media (min-width: 769px) {
+      #testimonials .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      #testimonials .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
         <i class="fas fa-lightbulb"></i><p>1. Discovery & Requirements</p></div>
       <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
