@@ -32,10 +32,50 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
+      @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background: #0d1b2a;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        display: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      nav.active ul {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+    .menu-toggle { display: none; }
+
 </head>
 <body>
   <header>
+    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+        <li><a href="#what-we-offer" style="color: white; text-decoration: none; font-weight: 600;">Services</a></li>
+        <li><a href="#solutions" style="color: white; text-decoration: none; font-weight: 600;">Solutions</a></li>
+        <li><a href="#process" style="color: white; text-decoration: none; font-weight: 600;">Process</a></li>
+        <li><a href="#testimonials" style="color: white; text-decoration: none; font-weight: 600;">Clients</a></li>
+        <li><a href="#contact" style="color: white; text-decoration: none; font-weight: 600;">Contact</a></li>
+      </ul>
+    </nav>
     <a href="/">
       <img src="Tac_logo.png" alt="Triple A Circuit AB Logo" class="logo">
     </a>
@@ -44,7 +84,7 @@
     <button class="cta-button">Let's discuss your project</button>
   </header>
 
-  <section class="container">
+  <section id="what-we-offer" class="container">
     <h2 class="section-title">What We Offer</h2>
     <div class="cards">
       <div class="card"><i class="fas fa-microchip"></i><p>Firmware development in C/C++</p></div>
@@ -55,7 +95,7 @@
     </div>
   </section>
 
-  <section class="container">
+  <section id="solutions" class="container">
     <h2 class="section-title">Some of Our Solutions</h2>
     <div class="cards">
       <div class="card">
@@ -86,7 +126,7 @@
     </div>
   </section>
 
-  <section class="container" style="background: #ffffff; transition: background 0.3s ease; animation: fadeIn 1s ease-in-out;">
+  <section id="process" class="container" style="background: #ffffff; transition: background 0.3s ease; animation: fadeIn 1s ease-in-out;">
     <h2 class="section-title">Our Process</h2>
     <div class="cards">
       <div class="card"><i class="fas fa-lightbulb"></i><p>1. Discovery & Requirements</p></div>
@@ -95,7 +135,7 @@
     </div>
   </section>
 
-  <section class="container" style="animation: fadeIn 1s ease-in-out;">
+  <section id="testimonials" class="container" style="animation: fadeIn 1s ease-in-out;">
     <h2 class="section-title">What Our Clients Say</h2>
     <div class="cards">
       <div class="card">
@@ -114,7 +154,7 @@
     <p>Triple A Circuit AB is a Sweden-based embedded software partner. We help startups and product developers build smart, reliable systems by delivering efficient, scalable firmware solutions.</p>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2 class="section-title">Contact Us</h2>
     <form class="contact-form">
       <input type="text" placeholder="Your Name" required />
