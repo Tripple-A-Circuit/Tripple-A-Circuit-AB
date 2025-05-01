@@ -246,6 +246,31 @@
       align-items: center;
     }
   }
+  @media (min-width: 769px) {
+    .header-bar {
+      justify-content: flex-start;
+      padding: 0 60px;
+    }
+
+    .header-bar a {
+      margin-right: auto;
+    }
+
+    nav {
+      display: block;
+      position: static;
+      background: none;
+    }
+
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .menu-toggle {
+      display: none !important;
+    }
+  }
 </style>
 
 </head>
