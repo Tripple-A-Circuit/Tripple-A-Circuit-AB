@@ -67,6 +67,8 @@
       }
     }
     .menu-toggle { display: none; }
+    nav ul li a { display: block; padding: 10px 15px; }
+    nav ul li a:hover { background: rgba(255,255,255,0.1); border-radius: 5px; }
   </style>
 
 </head>
@@ -75,8 +77,11 @@
     <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
       <i class="fas fa-bars"></i>
     </div>
+    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+      <i class="fas fa-bars"></i>
+    </div>
     <nav>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; justify-content: flex-end;" >
         <li><a href="#what-we-offer" style="color: white; text-decoration: none; font-weight: 600;">Services</a></li>
         <li><a href="#solutions" style="color: white; text-decoration: none; font-weight: 600;">Solutions</a></li>
         <li><a href="#process" style="color: white; text-decoration: none; font-weight: 600;">Process</a></li>
@@ -175,5 +180,12 @@
   <footer>
     <p>&copy; 2025 Triple A Circuit AB. All rights reserved.</p>
   </footer>
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
