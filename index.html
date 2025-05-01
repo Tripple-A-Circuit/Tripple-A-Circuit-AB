@@ -28,6 +28,10 @@
     .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ccc; font-size: 1em; }
     .contact-form button { background: #1b263b; color: white; padding: 12px 25px; border: none; border-radius: 25px; font-size: 1em; cursor: pointer; }
     footer { background: #0d1b2a; color: white; text-align: center; padding: 20px; font-size: 0.9em; }
+      @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -79,6 +83,15 @@
         <p>Industrial Automation</p>
         <img src="https://via.placeholder.com/300x150?text=Automation" alt="Automation">
       </div>
+    </div>
+  </section>
+
+  <section class="container" style="background: #ffffff; transition: background 0.3s ease; animation: fadeIn 1s ease-in-out;">
+    <h2 class="section-title">Our Process</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-lightbulb"></i><p>1. Discovery & Requirements</p></div>
+      <div class="card"><i class="fas fa-code"></i><p>2. Development & Testing</p></div>
+      <div class="card"><i class="fas fa-rocket"></i><p>3. Delivery & Support</p></div>
     </div>
   </section>
 
