@@ -182,7 +182,7 @@
   <header style="padding-top: 0;">
     <div class="header-bar">
   <a href="/">
-    <img src="Tac_2.png" alt="Tripple-A-Circuit Logo" class="logo">
+    <img src="https://tripple-a-circuit.github.io/Tripple-A-Circuit-AB/Tac_2.png" alt="Tripple-A-Circuit Logo" class="logo">
   </a>
   <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
     <i class="fas fa-bars"></i>
@@ -202,8 +202,13 @@
     <a href="#contact" class="cta-button">Let's discuss your project</a>
   </header>
 
-  <section id="what-we-offer" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">What We Offer</h2>
+    <section id="what-we-offer" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M12 0C5.371 0 0 5.373 0 12s5.371 12 12 12 12-5.373 12-12S18.629 0 12 0zm1 17.93V22h-2v-4.07A8.001 8.001 0 0 1 4.07 13H0v-2h4.07A8.001 8.001 0 0 1 11 4.07V0h2v4.07A8.001 8.001 0 0 1 19.93 11H24v2h-4.07A8.001 8.001 0 0 1 13 17.93z"/>
+        </svg>
+        What We Offer
+    </h2>
     <div class="cards" style="display: grid; gap: 30px;">
   <style>
     @media (min-width: 769px) {
@@ -225,9 +230,13 @@
     </div>
   </section>
 
-  <section id="solutions" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">Some of Our Solutions</h2>
-    <div class="cards" style="display: grid; gap: 30px;">
+    <section id="solutions" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M13 2v4h-2V2H7v6H5V2H2v20h20V2h-3v6h-2V2h-4z"/>
+        </svg>
+        Some of Our Solutions
+    </h2>
   <style>
     @media (min-width: 769px) {
       .cards {
@@ -240,36 +249,86 @@
       }
     }
   </style>
-      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
-        <i class="fas fa-car"></i>
-        <p>Automotive Solutions</p>
-        <img src="https://via.placeholder.com/300x150?text=Car+Systems" alt="Automotive">
-      </div>
-      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
-        <i class="fas fa-lock"></i>
-        <p>Security Systems</p>
-        <img src="https://via.placeholder.com/300x150?text=Security" alt="Security">
-      </div>
-      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
-        <i class="fas fa-elevator"></i>
-        <p>Elevator Control Systems</p>
-        <img src="https://via.placeholder.com/300x150?text=Elevators" alt="Elevator">
-      </div>
-      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
-        <i class="fas fa-home"></i>
-        <p>Smart Home Devices</p>
-        <img src="https://via.placeholder.com/300x150?text=Smart+Home" alt="Smart Home">
-      </div>
-      <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
-        <i class="fas fa-industry"></i>
-        <p>Industrial Automation</p>
-        <img src="https://via.placeholder.com/300x150?text=Automation" alt="Automation">
-      </div>
-    </div>
+
+    <div class="cards" style="display: grid; gap: 40px; padding-top: 30px;">
+        <style>
+            .card svg {
+            display: block;
+            margin: 0 auto 15px;
+            }
+            .card img {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            }
+            .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            }
+            .card p {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1b263b;
+            }
+        </style>
+
+        <!-- Automotive -->
+        <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#415a77" viewBox="0 0 24 24">
+            <path d="M5 11h14l1 2v4a1 1 0 0 1-1 1h-1a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H4a1 1 0 0 1-1-1v-4l2-2zm1.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg>
+            <p>Automotive Solutions</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.o8-1jpZDo85HM40wYwCvmAHaDN&pid=Api" alt="Automotive">
+        </div>
+
+        <!-- Security -->
+        <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#415a77" viewBox="0 0 24 24">
+            <path d="M12 17a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm6-7V9a6 6 0 1 0-12 0v1H4v10h16V10h-2zM8 9a4 4 0 1 1 8 0v1H8V9z"/>
+            </svg>
+            <p>Security Systems</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.07dVBM_9k9wNp_PorQldSAHaEi&pid=Api" alt="Security Systems">
+        </div>
+
+        <!-- Elevator -->
+        <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#415a77" viewBox="0 0 24 24">
+            <path d="M5 3h14a2 2 0 0 1 2 2v14h-2v-4H5v4H3V5a2 2 0 0 1 2-2zm14 8V5H5v6h14zm-4 7v-3H9v3h6z"/>
+            </svg>
+            <p>Elevator Control Systems</p>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.rj93ZmUN_frwNwmZAbJtrwHaFW&pid=Api" alt="Elevator Control">
+        </div>
+
+        <!-- Smart Home -->
+        <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#415a77" viewBox="0 0 24 24">
+            <path d="M12 3C7.03 3 3 7.03 3 12c0 4.97 4.03 9 9 9 1.85 0 3.58-.56 5-1.52V20H7v-2h10v-2H7v-2h10v-2H7v-2h10V9H7V7h10V5.52A8.96 8.96 0 0 0 12 3z"/>
+            </svg>
+            <p>Smart Home Devices</p>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.nUkRtPRqimpLtU7Q9banEwHaE8&pid=Api" alt="Smart Home">
+        </div>
+
+        <!-- Industrial Automation -->
+        <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#415a77" viewBox="0 0 24 24">
+            <path d="M2 6h20v2H2V6zm0 5h20v2H2v-2zm0 5h20v2H2v-2z"/>
+            </svg>
+            <p>Industrial Automation</p>
+            <img src="https://th.bing.com/th/id/OIP.4TqRVi7vDOdvrYDmTLNJMgHaD-?rs=1&pid=ImgDetMain" alt="Industrial Automation">
+        </div>
+        </div>
   </section>
 
-  <section id="process" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">Our Process</h2>
+    <section id="process" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M4 4h2v16H4V4zm14 0h2v16h-2V4zM8 12h8v2H8v-2z"/>
+        </svg>
+        Our Process
+    </h2>
     <div class="cards" style="display: grid; gap: 30px;">
   <style>
     @media (min-width: 769px) {
@@ -292,9 +351,13 @@
     </div>
   </section>
 
-  <section id="testimonials" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">What Our Clients Say</h2>
-    <div class="cards" style="display: grid; gap: 30px;">
+    <section id="testimonials" class="container" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M3 3v18h18V3H3zm2 2h14v14H5V5zm4 2v2h6V7H9zm0 4v2h6v-2H9z"/>
+        </svg>
+        What Our Clients Say
+    </h2>
   <style>
     @media (min-width: 769px) {
       #testimonials .cards {
@@ -318,15 +381,25 @@
     </div>
   </section>
 
-  <section class="about" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">About Us</h2>
+    <section class="about" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+        About Us
+    </h2>
     <div class="card" style="background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 30px; text-align: center;">
       <p>Tripple-A-Circuit is a Sweden-based embedded software partner specializing in designing and delivering high-performance firmware solutions. We help startups and product developers turn their ideas into reality by building scalable, reliable, and efficient systems. With deep expertise in embedded C/C++, real-time operating systems, and driver development for protocols like I2C, SPI, UART, and CAN, our team transforms complex hardware into smart, connected technology. Whether you're in automotive, security, industrial automation, or smart devices—we deliver code that powers innovation.</p>
     </div>
   </section>
 
-  <section id="contact" class="contact" style="background-color: #f4f8fb; padding: 80px 20px;">
-    <h2 class="section-title" style="text-align: center;">Contact Us</h2>
+    <section id="contact" class="contact" style="background-color: #f4f8fb; padding: 80px 20px;">
+    <h2 class="section-title" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#415a77" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 10px;">
+        <path d="M21 8V7l-3 2-2-2 2-2-1-1-2 2-2-2-2 2 2 2-2 2 1 1 2-2 2 2 2-2-2-2 3-2zM2 20h20v2H2v-2z"/>
+        </svg>
+        Contact Us
+    </h2>
     <form class="contact-form" style="display: flex; flex-direction: column; gap: 20px; max-width: 500px; margin: 0 auto;">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
